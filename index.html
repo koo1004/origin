@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+  </body>
+  <label>입력</label>
+  <input
+    id="mySelect"
+    type="number"
+    value=""
+    placeholder="숫자를 입력하시오."
+  />
+  <button onclick="onclick_button()">Submit</button>
+  <div>
+    <label>입력</label>
+    <input
+      id="myPoint"
+      type="number"
+      value=""
+      placeholder="점수를 입력하시오."
+      max="100"
+    />
+    <button onclick="onclick_point_button()">Submit</button>
+  </div>
+  <h3>사용 가능한 스킬을 체크해주세요.</h3>
+  <label>
+    <input type="checkbox" name="skill" value="HTML" />
+    HTML
+  </label>
+  <br />
+  <label>
+    <input type="checkbox" name="skill" value="CSS" />
+    CSS
+  </label>
+  <br />
+  <label>
+    <input type="checkbox" name="skill" value="Javascript" />
+    Javascript
+  </label>
+  <br />
+  <label>
+    <input type="checkbox" name="skill" value="React" />
+    React
+  </label>
+  <div>
+    <button onclick="onclick_skill_button()">제출</button>
+  </div>
+
+  <button onclick="number_hab()">더하기 버튼</button>
+  <button onclick="number_hol()">홀수나오기 버튼</button>
+  <button onclick="number_sam()">369 버튼</button>
+
+  <div>
+    <button onclick="greet('에밀리')">이름 버튼</button>
+    <button onclick="meetAt(2024)">날짜 버튼</button>
+    <button onclick="findSmallestElement([100,200,3,0,2,1])">작은수 버튼</button>
+  </div>
+  <div>
+    <label>금액</label>
+    <input type="text" id="amount" value="" placeholder="금액을 입력해주세요."     
+    onkeyup="formatCurrency(this)">
+    <button onclick="chargeElement()">Submit</button>
+  </div>
+</html>
